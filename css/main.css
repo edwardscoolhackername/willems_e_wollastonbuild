@@ -388,3 +388,188 @@ h2, h3 { font-family: 'Lato', Helvetica, sans-serif; }
   top: 5px;
   margin-right: 5px;
 }
+
+/* ======================================================================= */
+/* Iphone landscape break point - min-width at 500 */
+@media screen and (min-width: 500px) {
+	#pano p { width: 80%; }
+}
+
+/* Ipad break point */
+@media screen and (min-width: 640px) {
+	#membershipCon > p {
+		width: 90%;
+		margin: auto;
+	}
+}
+
+/* ======================================================================== */
+/* Tablet Size */
+@media screen and (min-width: 768px) {
+	#mainHeader{
+		display: flex;
+		flex-direction: row;
+		margin-left: 20px;
+		margin-right: 20px;
+	}
+
+	#logoCon {
+		order: -1;
+		margin: 10px 0 0 0;
+	}
+
+	#wollastonLogo {
+		margin:0;
+		display: inline;
+		max-width: 162px;
+	}
+
+	#button { display: none; }
+
+	#burgerCon {
+		/*display: block;*/
+		display: flex;
+		flex-direction: column;
+		margin: 0;
+	}
+
+	#mainNav {
+		text-align: right;
+		text-transform: uppercase;
+		font-size: .875em;
+		margin-left: auto;
+	}
+
+	#burgerMenu { text-align: right; }
+
+	#mainNav li {
+		border-bottom: none;
+		display: inline;
+		margin-left: 20px;
+	}
+
+	#mainNav li a {
+		background-color: #fff;
+		display: inline;
+		padding: 5px 0 5px 0;
+		text-decoration: none;
+		color: #6d6d6c;
+	}
+
+	#mainNav li a:hover {
+		color: #8fa771;
+		border-bottom: 3px solid #8fa771;
+		padding-bottom: 5px;
+		background-color: transparent;
+	}
+
+	#mainNav li:first-child  { border-top: none; }
+
+	#mainNav li:last-child { margin-bottom: 0; }
+
+	/*descendent selector, don't want to affect order buttons below*/
+	#burgerCon .actionButton {
+		order: -1;
+		margin: 15px 0 42px auto;
+		padding: 15px 5px 15px 5px;
+	}
+
+	#pano h2 { font-size: 42px; }
+
+	#pano p { width: 545px; }
+
+	#learnMore { width: 170px; }
+
+	#services {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+	}
+
+	#services header
+	{
+		width: 1200px;
+	}
+
+	.serviceBox
+	{
+		flex: 1 1 225px;
+		margin-bottom: 190px;
+	}
+
+	#carts
+	{
+		margin-left: 3%;
+		margin-right: 3%;
+	}
+
+	.servicesBorderBox
+	{
+		width: 80%;
+		top: 130px;
+		height: 170px;
+	}
+
+	#planSelector
+	{
+		display: none;
+	}
+
+	#membershipCon>p
+	{
+		margin-bottom: 30px;
+		width: 80%;
+	}
+
+	#gold, #junior, #senior
+	{
+		display: block;
+	}
+
+	#membershipCon
+	{
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+	}
+
+	#membershipCon>h2
+	{
+		margin-left: auto;
+		margin-right: auto;
+		width: 95%;
+	}
+
+	.membershipPlans
+	{
+		flex: 1 1 225px;
+	}
+
+	#gold
+	{
+		margin-left: 3%;
+		margin-right: 3%;
+	}
+
+	#mainFooter section
+	{
+		margin-top: 10px;
+	}
+
+	#mainFooter
+	{
+		background: url(../img/footer-desktop.jpg) no-repeat center;
+	}
+
+	@media screen and (min-resolution: 200dpi),
+       		screen and (min-resolution: 1.25dppx){
+		#mainFooter
+		{
+			background-image: url(../img/footer-desktop@2x.jpg);
+			background-size: cover;
+		}
+	}
+}
+
+
+/* DESKTOP SIZE - 1020px min-width */
