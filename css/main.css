@@ -404,7 +404,7 @@ h2, h3 { font-family: 'Lato', Helvetica, sans-serif; }
 }
 
 /* ======================================================================== */
-/* Tablet Size */
+/* Tablet Size - portrait 768px */
 @media screen and (min-width: 768px) {
 	#mainHeader{
 		display: flex;
@@ -571,5 +571,148 @@ h2, h3 { font-family: 'Lato', Helvetica, sans-serif; }
 	}
 }
 
+/*============================================================================*/
+/* DESKTOP SIZE - 1140px min-width */
 
-/* DESKTOP SIZE - 1020px min-width */
+@media screen and (min-width: 1140px) {
+
+	.container
+	{
+		box-shadow: 0px 0px 5px rgba(0,0,0,.2);
+	}
+
+	#pano
+	{
+
+		height: 360px;
+		background-image: url(../img/golf-course-desktop.jpg);
+	}
+
+	@media screen and (min-resolution: 200dpi),
+       		screen and (min-resolution: 1.25dppx){
+		#pano
+		{
+			background-image: url(../img/golf-course-desktop@2x.jpg);
+			background-size: cover;
+		}
+	}
+
+	#pano h2
+	{
+		font-size: 56px;
+	}
+
+	#pano p
+	{
+		font-size: 16px;
+		line-height: 26px;
+		width: 720px;
+	}
+
+
+	#learnMore
+	{
+		margin-top: 80px;
+		width: 170px;
+	}
+
+	#serviceCon
+	{
+		padding-top: 30px;
+	}
+
+	#teeIcon
+	{
+		max-width: 25px;
+	}
+
+
+	#services header h2
+	{
+		font-size: 31px;
+	}
+
+	#services header h2::after
+	{
+		margin-bottom: 20px;
+	}
+
+	.serviceBox
+	{
+		margin-bottom: 220px;
+	}
+
+	.servicesBorderBox
+	{
+	width: 280px;
+	top: 90%;
+	height: 190px;
+	}
+
+	#services section p
+	{
+		font-size: 15px;
+		line-height: 22px;
+	}
+
+	#services section h2
+	{
+		font-size: 22px;
+	}
+
+	#services section h2::after
+	{
+  		margin: 20px auto 15px auto;
+  		width: 50px;
+	}
+
+	#iconTitlePro
+	{
+		background: url(../img/proshop-icon.svg) no-repeat;
+		background-size: 25px;
+		width: 240px;
+	}
+
+	#iconTitleCarts
+	{
+		background: url(../img/golfcarts-icon.svg) no-repeat;
+		background-size: 25px;
+		width: 240px;
+	}
+
+	#iconTitleClub
+	{
+		background: url(../img/clubhouse-icon.svg) no-repeat;
+		background-size: 25px;
+		width: 240px;
+	}
+
+	#gold
+	{
+		flex: 1 1 370px;
+	}
+
+	#membershipCon
+	{
+		width: 980px;
+		margin-left: auto;
+		margin-right: auto;
+		margin-bottom: 100px;
+	}
+
+	#mainFooter
+	{
+		height: 262px;
+	}
+
+	#mainFooter section h2
+	{
+		font-size: 22px;
+	}
+
+	#mainFooter section p, #mainFooter section a
+	{
+		font-size: 16px;
+	}
+
+}
